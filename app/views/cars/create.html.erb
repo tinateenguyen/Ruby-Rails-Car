@@ -1,0 +1,10 @@
+<h1>Welcome to the Car Simulator!</h1>
+<hr/>
+Fill out the forms below to create a car.<br/><br/>
+<form action="" method="get">
+  Make: <input type="text" name="make" value="Lexus CT200h" required/>
+  Year: <input type="text" name="year" value="2014"  required/>
+  <input type="submit" value="Simulate Car">
+</form>
+
+<%= flash.now[:alert] %>

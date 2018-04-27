@@ -1,0 +1,28 @@
+<h3>STATUS</h3> <br/>
+Current make: <%= @random.make %><br/>
+Current year: <%= @random.year %><br/>
+Car lights: <%= @random.lights %><br/>
+Car speed: <%= @random.speed %> Km/h<br/>
+Emergency brakes: <%= @random.ebrake %><br/>
+Color: <%= @random.getColor %>
+<br/><br/>
+<form action="lights" method "get">
+  <input type="submit" value="Lights">
+</form>
+<form action="brake" method "get">
+  <input type="submit" value="Brake">
+</form>
+<form action="accelerate" method "get">
+  <input type="submit" value="Accelerate">
+</form>
+<br/>
+<form action="ebrake" method "get">
+  <input type="radio" name="ebrake" value="on"> Set
+  <input type="radio" name="ebrake" value="off">Release</br>
+  <input type="submit" value="Set Emergency Brake">
+</form>
+<br/>
+<form action="color" method "get">
+  <input type="color" name="color" value="">
+  <input type="submit" value="Pick Color">
+</form>
